@@ -152,6 +152,30 @@ button {
   box-shadow: 0 0 10px 5px rgba(0,0,0,0.1);
 }
 
+.logout {
+  border: 1px grey solid;
+  padding: 8px 30px; 
+  color: white;
+  text-decoration: none;
+  background-color: grey;
+  display: inline-block;
+}
+
+.avatar {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 10px rgba(0,0,0,0.1);
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  margin-bottom:  30px;
+}
+
+.user-page {
+  text-align: center;
+}
+
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;
