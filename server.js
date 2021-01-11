@@ -32,7 +32,8 @@ app.get('/', (req, res) => {
 
 app.get('/auth.logout', (req, res) => {
   req.logout();
-  res.render('loggedOut');});
+  res.render('loggedOut');
+});
 
 app.use('/auth', require('./routes/auth.routes'));
 app.use('/user', require('./routes/user.routes'));

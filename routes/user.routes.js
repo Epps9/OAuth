@@ -11,7 +11,8 @@ const isLogged = (req, res, next) => {
   };
 
 router.get('/logged', (req, res) => {
-  res.render('logged', {name: req.user});
+  if(typeof user ==! undefined) {return req.user};
+  res.render('logged', {name: req.user.name.givenName});
 });
 
 router.get('/no-permission', (req, res) => {
